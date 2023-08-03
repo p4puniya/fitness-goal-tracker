@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fitness Goal Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="goalForm">
+    <label for="goalType">Goal Type:</label>
+    <select id="goalType">
+      <option value="weightLoss">Weight Loss</option>
+      <option value="strengthGain">Strength Gain</option>
+    </select>
+
+    <label for="targetMetrics">Target Metrics:</label>
+    <input type="text" id="targetMetrics" required>
+
+    <!-- Add other necessary form fields here -->
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Link your JavaScript file here if you have external script -->
+</body>
+<script>
+  document.getElementById('goalForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Retrieve form field values
+    var goalType = document.getElementById('goalType').value;
+    var targetMetrics = document.getElementById('targetMetrics').value;
+
+    // Perform validation if needed (you can add validation logic here)
+
+    // Process the form data as desired
+    // For example, you can send an AJAX request to store the data in the server-side database
+    // You can also update the user's goals locally if needed
+    console.log("Goal Type: " + goalType);
+    console.log("Target Metrics: " + targetMetrics);
+
+    // Reset the form fields if desired
+    document.getElementById('goalForm').reset();
+  });
+</script>
+
+</html>

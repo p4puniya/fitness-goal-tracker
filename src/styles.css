@@ -1,0 +1,24 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the landing page */
+  .landing {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  #dashboard {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }

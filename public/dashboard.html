@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <!-- You can add navigation or user information here -->
+    </header>
+
+    <main>
+        <section id="goals-container">
+            <!-- Goals will be dynamically added here using JavaScript -->
+        </section>
+
+        <!-- New goal form -->
+        <form id="new-goal-form">
+            <h3>Create New Goal</h3>
+            <label for="goal-type">Goal Type:</label>
+            <input type="text" id="goal-type" required>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" required>
+            <label for="reps">Reps:</label>
+            <input type="number" id="reps" required>
+            <label for="distance">Distance:</label>
+            <input type="number" id="distance" required>
+            <button type="submit">Create Goal</button>
+        </form>
+
+        <!-- Progress update form -->
+        <section id="progress-container">
+            <h3>Track Progress</h3>
+            <form id="progressForm">
+                <label for="goalId">Goal ID:</label>
+                <input type="text" id="goalId" required>
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" required>
+                <label for="reps">Reps:</label>
+                <input type="number" id="reps" required>
+                <label for="distance">Distance:</label>
+                <input type="number" id="distance" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
